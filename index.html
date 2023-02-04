@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container header-section flex">
+        <div class="header-title">
+          <h1>To Do List</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="input-section container">
+      <div class="input flex">
+        <input
+          type="text"
+          id="input-task"
+          class="input-text"
+          placeholder="Enter the Task 📝"
+        />
+        <span class="button"><button class="btn btn-add">Add</button></span>
+      </div>
+    </section>
+
+    <div class="center-1 hidden show-case">
+      <span class="error">✅ Nothing To Do Today</span>
+    </div>
+    <div class="center hidden">
+      <span class="error">❌ Please Write Something in Task</span>
+    </div>
+
+    <section class="output-section small-container">
+      <!-- <div class="output-text flex">
+        <div class="list-item">Shopping for America</div>
+        <div class="flex second-child">
+          <button class="btn btn-done" onclick="removeDone(this)">Done</button>
+          <button class="btn btn-decline" onclick="removeDelete(this)">Delete</button>
+        </div>
+      </div> -->
+    </section>
+
+    <div class="switch">
+      <div class="toggle"><div class="fair"></div></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
